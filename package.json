@@ -1,0 +1,26 @@
+{
+  "name": "webdevbootcamp-capstone4-weatherdata-website",
+  "version": "1.0.0",
+  "description": "Capstone Project 4 from Web Dev Bootcamp",
+  "homepage": "https://github.com/briansalazar-tech/WebDevBootcamp-Capstone4-WeatherData-Website#readme",
+  "bugs": {
+    "url": "https://github.com/briansalazar-tech/WebDevBootcamp-Capstone4-WeatherData-Website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briansalazar-tech/WebDevBootcamp-Capstone4-WeatherData-Website.git"
+  },
+  "license": "ISC",
+  "author": "Brian Salazar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "dotenv": "^17.3.1",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  }
+}
