@@ -17,8 +17,6 @@ app.get("/", async (req, res) => {
     const dateTimes = [];
     const temps = [];
     const descriptions = [];
-    
-
     try {
         const response = await axios.get(API_URL, {
             params: {
@@ -34,10 +32,6 @@ app.get("/", async (req, res) => {
             temps.push(entry.main.temp.toString());
             descriptions.push(entry.weather[0].description);
         });
-        // console.log(dateTimes);
-        // console.log(temps);
-        // console.log(descriptions);
-
         // data to be passed to web page
         const content = {
             dateTimes: dateTimes,
@@ -45,11 +39,10 @@ app.get("/", async (req, res) => {
             descriptions: descriptions
         };
         // console.log(content)
-        res.render("index.ejs");
+        res.render("index.ejs", {content: content});
     } catch (error) {
         console.log(error.message);
     }
-    
 })
 
 app.listen(port, () => {
